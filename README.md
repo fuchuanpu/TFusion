@@ -49,6 +49,4 @@ chmod +x script/run_all.py
 The detailed results can be found in `./log` and `./figure`.
 
 ## 0x3 Reference
-```
-Only 1.0‰ Traffic Samples are Required for Malicious Traffic Detection: A Cross-Attention Feature Fusion Based Few-Shot Learning, Anonymous authors, 2024.
-```
+> Only 1.0‰ Traffic Samples are Required for Malicious Traffic Detection: A Cross-Attention Feature Fusion Based Few-Shot Learning, Anonymous authors, 2024.
