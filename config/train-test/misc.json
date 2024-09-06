@@ -1,0 +1,35 @@
+{
+    "command": "train",
+    "detection_model": "kmeans",
+    "data_path": "./data/misc",
+    "log_path": "./log/train/misc",
+    "fig_path": "./figure/train/misc",
+    "traffic_model_path": "./save/traffic_model/mawi",
+    "traffic_model_tag": "20230101_F",
+    "detection_model_path": "./save/detection_model/misc",
+    "data_tag": {
+        "lrtcpdos": 0.5,
+        "spam": 0.5,
+        "sshpwd": 0.5,
+        "telnetpwd": 0.5,
+        "sidechannel": 0.5,
+        "crossfire": 0.5
+    },
+    "gpu_enable": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "data_construct_param": {
+        "contrast_batch_size": 50,
+        "train_number": 50,
+        "pre_train_ratio": 0.2,
+        "segment_len": 100,
+        "test_samp_ratio": 0.01
+    },
+    "train_param": {
+        "lr": 0.001,
+        "num_epoch": 5
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "command": "pre-train",
+    "detection_model": "placeholder",
+    "data_path": "./data/mawi",
+    "log_path": "./log/pre_train/mawi",
+    "fig_path": "./figure/pre_train/mawi",
+    "traffic_model_path": "./save/traffic_model/mawi",
+    "data_tag": {
+        "20200101_G": 3.0
+    },
+    "disabled": {
+        "20200205_G": 3.0,
+        "20200304_G": 3.0,
+        "20200401_G": 3.0,
+        "20200506_G": 3.0,
+        "20200603_G": 3.0
+    },
+    "gpu_enable": [
+        0, 1, 2, 3
+    ],
+    "data_construct_param": {
+        "contrast_batch_size": 100,
+        "train_ratio": 0.1,
+        "pre_train_ratio": 0.2,
+        "segment_len": 100,
+        "test_samp_ratio": 0.01
+    },
+    "train_param": {
+        "lr":0.001,
+        "num_epoch": 1
+    }
+}
