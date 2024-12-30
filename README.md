@@ -1,6 +1,6 @@
-# TFusion
+# tFusion
 
-**Generic Feature Extraction for Few-Shot Malicious Traffic Detection.**
+**Cross-Modality Feature Fusion for Malicious Traffic Detection.**
 
 This repository is anonymous and contains the code and datasets used in the submitted paper. 
 We provide a minimal working demo to reproduce the majority of the results in the paper.
@@ -33,7 +33,7 @@ Please try a different `TARGET_HASH` if the link has expired, due to the one-dow
 3. Kzd1nNa7SunE
 
 ## 0x2 Usage
-### 0x21 Construct a TFusion model
+### 0x21 Construct a tFusion model
 ``` bash
 chmod +x ./main.py
 ./main.py -c ./config/pre-train/MAWI_F.json
@@ -41,7 +41,7 @@ chmod +x ./main.py
 The pre-train model is saved to `./save/traffic_model/mawi/20230101_F_model.pt`
 
 ### 0x22 End-to-End Detection
-We use TFusion-extracted features to train lightweight models and test their performance on the test set:
+We use tFusion-extracted features to train lightweight models and test their performance on the test set:
 ``` bash
 chmod +x script/run_all.py
 ./script/run_all.py
@@ -49,4 +49,4 @@ chmod +x script/run_all.py
 The detailed results can be found in `./log` and `./figure`.
 
 ## 0x3 Reference
-> Only 1.0‰ Traffic Samples are Required for Malicious Traffic Detection: A Cross-Attention Feature Fusion Based Few-Shot Learning, Anonymous authors, 2024.
+> "Only 1.0 ‰ Training Samples are Required for New Networks": Cross-Modality Feature Fusion for Malicious Traffic Detection, Anonymous authors, 2024.
