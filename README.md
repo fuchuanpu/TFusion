@@ -6,7 +6,7 @@ This repository is anonymous and contains the code and datasets used in the subm
 We provide a minimal working demo to reproduce the majority of the results in the paper.
 
 > This repository and associated dataset are anonymous for the double-blind review process.
-> We are grateful to the anonymous sharing services `file.io` and `anonymous.4open.science`.
+> We are grateful to the anonymous sharing services `anonymous.4open.science`.
 
 ## 0x0 Hardware
 The code has been tested on a clean `Ubuntu 22.04` machine. Please ensure you have around 10GB of free disk space available for the dataset and the model.
@@ -19,18 +19,11 @@ bash ./scripts/env.sh
 The current version supports GPU execution (up to four GPUs), but the installation only supports the CPU version of PyTorch. Please modify it for GPU support.
 
 ### 0x12 Download the Datasets 
-The dataset is 463MB before extraction and 5.2GB after extraction:
+Please download the datsets from the HotCRP. The dataset is 443MB before extraction and around 5.2GB after extraction:
 ``` bash
-TARGET_HASH="bv9vklT88pyS"
-wget https://file.io/$TARGET_HASH -O tfusion_data.tar.gz
 tar -xvzf tfusion_data.tar.gz
 rm $_
 ```
-
-Please try a different `TARGET_HASH` if the link has expired, due to the one-download expiration policy of anonymous file sharing at `file.io`:
-1. Kzd1nNa7SunE
-2. TcVGgmupuhoM
-3. Kzd1nNa7SunE
 
 ## 0x2 Usage
 ### 0x21 Construct a tFusion model
@@ -49,4 +42,4 @@ chmod +x script/run_all.py
 The detailed results can be found in `./log` and `./figure`.
 
 ## 0x3 Reference
-> "Only 1.0 ‰ Training Samples are Required for New Networks": Cross-Modality Feature Fusion for Malicious Traffic Detection, Anonymous authors, 2024.
+> "Training with Only 1.0 ‰ Samples: Malicious Traffic Detection via Cross-Modality Feature Fusion", Anonymous authors, 2025.
